@@ -1,0 +1,365 @@
+.container-fluid{
+  padding:0 ! important;
+  overflow-x: hidden;
+}
+ul {
+  list-style-type: none;
+  padding-left:0 ! important;
+}
+.row.no-gutters {
+  padding-right: 0;
+  padding-left: 0;
+}
+#models, #model3, #modelx, #roadster{
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 1.5px;
+}
+.main {
+  height: 100vh;
+  min-height: 100vh;
+  width: 100vw;
+  margin-top: -37px;
+}
+
+.main__image__model3 {
+  background: url(https://i.pinimg.com/originals/be/85/f4/be85f479ec6474495f8eb6420d97696d.jpg) no-repeat;
+}
+.main__image__models {
+  background: url(https://policygenius-blog.imgix.net/2017/10/tesla-model-s.jpg) no-repeat;
+}
+.main__image__modelx {
+  background: url(https://images.hgmsites.net/hug/2017-tesla-model-x_100585106_h.jpg) no-repeat;
+}
+.main__image__roadster {
+  background: url(https://www.tesla.com/sites/default/files/images/roadster/roadster-social.jpg) no-repeat;
+}
+.main__image__model3, .main__image__models,  .main__image__modelx, .main__image__roadster{
+  height: 100vh;
+  width: 100%;
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+}
+
+
+.information {
+  background-color: red;
+  width: 100vw;
+  height: 100vh;
+}
+.information__container {
+  width: 60vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.information__intro, .information__reservation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100vw;
+  background-color: #DCDCDC;
+  flex-direction: column;
+}
+.section--title {
+  font-weight: 200;
+  font-family: sans-serif;
+  font-size: 50px;
+}
+.section--description {
+  font-weight: 200;
+  font-family: sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.btn__group {
+  margin: 15px;
+}
+.btn--primary {
+  padding: 15px 30px 15px 30px;
+  background-color: #FF8181;
+  color: black;
+  margin: 15px;
+}
+.btn--secondary {
+  padding: 15px 30px 15px 30px;
+  background-color: darkgrey;
+  color: black;
+}
+#btn--reservation {
+  padding: 15px 50px 15px 50px;
+  background-color: black;
+  color: #FFF;
+}
+.timeline {
+  height: 80vh;
+  background-color: lightgrey;
+  width: 100vw;
+}
+.timeline__sub__containers {
+  height: 60vh;
+  width: 100%;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding:0 ! important;
+}
+.timeline__title {
+  height: 20%;
+  background-color: green;
+}
+.timeline__details {
+  height: 80%;
+  background-color: red;
+}
+.timeline--description {
+  text-align: center;
+}
+.roadster__text__container {
+  height: 100vh;
+  width: 100vw;
+}
+.header--text {
+  display: flex;
+  padding-top: 45px;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  width: 100vw;
+}
+.roadster--title {
+  font-weight: 200;
+  font-family: sans-serif;
+  font-size: 18px;
+  padding-top: 20px;
+}
+.roadster--name {
+  font-weight: 600;
+  color: #000000;
+  font-family: Raleway, sans-serif;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+.footer--text {
+  display: flex;
+  height: 50vh;
+  width: 100vw;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+.roadster--bottom--container {
+  flex-direction: row;
+  display: flex;
+  width: 70%;
+}
+.roadster--top--container {
+  width: 30%;
+
+}
+.roadster--top--description {
+  color: #FFF;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 100;
+  text-align: center;
+
+}
+.footer--description {
+  height: auto;
+  width: 100%;
+  margin: 20px;
+}
+.footer--title {
+  color: #EFEFEF;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+.footer--details {
+  color: #EFEFEF;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 100;
+}
+.footer--reserve {
+  border: 2px solid #FFF;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer--reserve--description a:hover {
+  text-decoration: none;
+  color: #FFF;
+  opacity: 0.7;
+}
+.footer--reserve--description {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.footer--reserve--description a {
+  color: #FFF;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+.strong--text {
+  font-size: 22px;
+  font-weight: 200;
+}
+.roadsterspecs {
+  height: 175vh;
+  width: 100vw;
+  background-color: lightgrey;
+}
+.videos {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.video__container {
+  background-color: lightgrey;
+  height: 175vh;
+}
+.video--specs {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+}
+.video--specs--info {
+  height: 50px;
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #000000;
+}
+.video--specs--title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.video--specs--text {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.video--specs--value {
+  width: 50%;
+  display: flex;
+  padding-right: 20px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.roadster__aero {
+  background: url(https://4.bp.blogspot.com/-iD4nfZcO2WI/Wg5yZIXvGaI/AAAAAAAA8NI/5JYpb5NhBfQqmnuKinkfoHk3Z389OnazgCLcBGAs/s1600/Tesla-Roadster-5.jpg) no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.roadster__roof {
+  background: url(https://wallpaperspit.com/wp-content/uploads/Closed-roof-Tesla-Roadster-Wallpaper.jpg) no-repeat;
+}
+.roadster--interior--container {
+  background: url(http://assets.nydailynews.com/polopoly_fs/1.3639842.1510932693!/img/httpImage/image.jpg_gen/derivatives/gallery_1200/tesla-roadster-interior.jpg) no-repeat;
+
+}
+.roadster__aero, .roadster__roof, .roadster--interior--container{
+  height: 100vh;
+  width: 100%;
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+}
+.roadster__interior {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgrey;
+  flex-direction: column;
+  padding: 20px;
+}
+.roadster--interior--container {
+  height: 70vh;
+  width: 80%;
+
+}
+.roadster--aero--container{
+  height: 30vh;
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 20px;
+}
+.roadster--aero--title, .roadster--interior--title {
+  font-weight: 400;
+  font-size: 28px;
+  color: #D0D0D0;
+}
+.roadster--aero--description, .roadster--interior--description {
+  font-weight: 200;
+  color: #D0D0D0;
+}
+.roadster--interior--title, .roadster--interior--description {
+  color: #383838;
+}
+.roadster--interior--container--bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 80%;
+}
+.roadster__roof {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.roadster--roof--container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.roadster--roof--title {
+  text-align: left;
+  color: #D0D0D0;
+  font-weight: 200;
+  letter-spacing: 1.1px;
+  font-family: sans-serif;
+}
+.roadster--roof--description {
+  text-align: left;
+  color: #D0D0D0;
+  font-weight: 100;
+  font-family: sans-serif;
+}
