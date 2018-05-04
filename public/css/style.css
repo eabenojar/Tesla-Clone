@@ -6,6 +6,9 @@ ul {
   list-style-type: none;
   padding-left:0 ! important;
 }
+#index-nav {
+  background: transparent;
+}
 .row.no-gutters {
   padding-right: 0;
   padding-left: 0;
@@ -27,7 +30,7 @@ ul {
   background: url(https://i.pinimg.com/originals/be/85/f4/be85f479ec6474495f8eb6420d97696d.jpg) no-repeat;
 }
 .main__image__models {
-  background: url(https://policygenius-blog.imgix.net/2017/10/tesla-model-s.jpg) no-repeat;
+  background: url(https://www.electrive.com/wp-content/uploads/2018/02/tesla-model-s-elektroauto-electric-car-03.png) no-repeat;
 }
 .main__image__modelx {
   background: url(https://images.hgmsites.net/hug/2017-tesla-model-x_100585106_h.jpg) no-repeat;
@@ -236,9 +239,67 @@ ul {
   align-items: center;
   flex-direction: column;
 }
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
+}
+.videos_index {
+  width: 100%;
+  height: auto;
+  min-height: 90vh;
+  overflow-x: hidden;
+  background-color: transparent;
+}
 .video__container {
   background-color: lightgrey;
   height: 175vh;
+}
+nav {
+  z-index: 2;
+}
+.content {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.5); */
+  color: #f1f1f1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content-description {
+  font-style: sans-serif;
+  font-weight: 100;
+}
+.button-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 65%;
+  margin: 20px;
+}
+.index_button {
+  padding: 8px;
+  background-color: #000000;
+  opacity: 0.6;
+  color: #FFF;
+  border: 1px solid transparent;
+  width: 175px;
+  font-weight: 100;
+  font-size: 12px;
+  margin: 20px;
+  font-family: sans-serif;
+}
+.index_button:hover {
+  border: 1px solid #FFF;
+  opacity: 0.9;
 }
 .video--specs {
   height: 100vh;
