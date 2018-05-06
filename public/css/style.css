@@ -20,7 +20,7 @@ ul {
   letter-spacing: 1.5px;
 }
 .main {
-  height: 100vh;
+  height: 100vh;main__image__models
   min-height: 100vh;
   width: 100vw;
   margin-top: -37px;
@@ -29,12 +29,12 @@ ul {
 .main__image__model3 {
   background: url(https://i.pinimg.com/originals/be/85/f4/be85f479ec6474495f8eb6420d97696d.jpg) no-repeat;
 }
-.main__image__models {
-  background: url(https://www.electrive.com/wp-content/uploads/2018/02/tesla-model-s-elektroauto-electric-car-03.png) no-repeat;
-}
-.main__image__modelx {
+/* .main__image__models {
+  background: url(https://www.electrive.com/wp-content/uploads/2018/02/tesla-model-s-elektroauto-electric-car-03.pngmain__image__models) no-repeat;
+} */
+/* .main__image__modelx {
   background: url(https://images.hgmsites.net/hug/2017-tesla-model-x_100585106_h.jpg) no-repeat;
-}
+} */
 .main__image__roadster {
   background: url(https://www.tesla.com/sites/default/files/images/roadster/roadster-social.jpg) no-repeat;
 }
@@ -54,6 +54,7 @@ ul {
   background-color: red;
   width: 100vw;
   height: 100vh;
+  z-index: 2;
 }
 .information__container {
   width: 60vw;
@@ -244,8 +245,10 @@ ul {
   right: 0;
   bottom: 0;
   min-width: 100%;
-  min-height: 100%;
+  height: 800px;
+  /* min-height: 100vh; */
   z-index: 1;
+  object-fit: contain;
 }
 .videos_index {
   width: 100%;
