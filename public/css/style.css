@@ -63,6 +63,7 @@ ul {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
 }
 .information__intro, .information__reservation {
   display: flex;
@@ -70,8 +71,11 @@ ul {
   align-items: center;
   height: 50vh;
   width: 100vw;
-  background-color: #DCDCDC;
+  background-color: #FFF;
   flex-direction: column;
+}
+.information__reservation {
+  background-color: #E8E8E8;
 }
 .section--title {
   font-weight: 200;
@@ -110,25 +114,37 @@ ul {
   width: 100vw;
 }
 .timeline__sub__containers {
-  height: 60vh;
+  height: 50vh;
   width: 100%;
-  background-color: blue;
+  background-color: none;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding:0 ! important;
+  padding: 10%;
+}
+#middle__sub__container{
+ border-left: 1px solid lightgrey;
+ border-right: 1px solid lightgrey;
 }
 .timeline__title {
-  height: 20%;
-  background-color: green;
+  height: 30vh;
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .timeline__details {
-  height: 80%;
-  background-color: red;
+  height: 50vh;
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .timeline--description {
   text-align: center;
+  font-size: 14px;
+  font-weight: 200;
 }
 .roadster__text__container {
   height: 100vh;
