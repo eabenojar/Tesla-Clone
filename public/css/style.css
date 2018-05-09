@@ -207,10 +207,48 @@ form.example button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 10vh;
   width: 100%;
 }
-
+#modelS_spec_image, #model3_spec_image{
+  width: 440px;
+  height: 173px;
+}
+.model3_spec_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+}
+.spec_description_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 80%;
+}
+.spec_heading {
+  font-size: 20px;
+  font-weight: 300;
+  width: 100%;
+}
+.spec_description {
+  font-weight: 300;
+}
+.delivery_time, .performance, .range, .supercharging, .passenger, .cargo, .display {
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+  padding: 20px;
+}
+.model3_spec_safety {
+  background-color: none;
+  border-right: 1px solid lightgrey
+}
+.model3_spec_safety_image {
+  width: 90%;
+  height: 400px;
+}
 
 
 
