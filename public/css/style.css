@@ -32,9 +32,9 @@ ul {
 .main__image__model3 {
   background: url(https://i.pinimg.com/originals/be/85/f4/be85f479ec6474495f8eb6420d97696d.jpg) no-repeat;
 }
-/* .main__image__models {
-  background: url(https://www.electrive.com/wp-content/uploads/2018/02/tesla-model-s-elektroauto-electric-car-03.pngmain__image__models) no-repeat;
-} */
+.main__image__models {
+  background: url(https://fortunedotcom.files.wordpress.com/2015/07/hero-02.jpg) no-repeat;
+}
 /* .main__image__modelx {
   background: url(https://images.hgmsites.net/hug/2017-tesla-model-x_100585106_h.jpg) no-repeat;
 } */
@@ -207,7 +207,8 @@ form.example button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
+  height: auto;
+  padding: 20px;
   width: 100%;
 }
 #modelS_spec_image, #model3_spec_image{
@@ -216,7 +217,7 @@ form.example button:hover {
 }
 .model3_spec_container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   height: auto;
@@ -229,12 +230,13 @@ form.example button:hover {
   width: 80%;
 }
 .spec_heading {
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 24px;
+  font-weight: 400;
   width: 100%;
 }
 .spec_description {
-  font-weight: 300;
+  font-weight: 200;
+  font-size: 28px;
 }
 .delivery_time, .performance, .range, .supercharging, .passenger, .cargo, .display {
   border-bottom: 1px solid lightgrey;
@@ -248,6 +250,42 @@ form.example button:hover {
 .model3_spec_safety_image {
   width: 90%;
   height: 400px;
+}
+.model3_spec_safety_images, .model3_spec_safety_information {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.safety_spec_title {
+  font-size: 24px;
+  font-size: 200;
+  font-family: sans-serif;
+}
+.safety_spec_description {
+  color: #8A8A8A;
+}
+.model3_spec_safety_information_subcontainer{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.safety_spec_description {
+  font-size: 14px;
+  font-weight: 200;
+  font-family: sans-serif;
+}
+.model3_spec_title {
+  height: 220px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.model3_spec_title  h1 {
+  font-weight: 200;
+  font-size: 36px;
 }
 
 
@@ -550,4 +588,24 @@ nav {
   color: #D0D0D0;
   font-weight: 100;
   font-family: sans-serif;
+}
+/* FOOTER SECTION */
+.footer {
+  height: 100px;
+  width: 100%;
+  background-color: transparent;
+  padding-top: 43px;
+}
+ul.footer_links {
+  list-style: none outside none;
+  margin:0;
+  padding: 0;
+  text-align: center;
+}
+li {
+  margin: 0 10px;
+  display: inline;
+  font-size: 12px;
+  font-weight: 200;
+  color: #474747;
 }
