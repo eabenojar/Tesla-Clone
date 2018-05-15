@@ -26,7 +26,7 @@ ul {
   height: 100vh;main__image__models
   min-height: 100vh;
   width: 100vw;
-  margin-top: -37px;
+  /* margin-top: -37px; */
 }
 
 .main__image__model3 {
@@ -99,6 +99,44 @@ ul {
   text-align: center;
   margin: 15px;
 }
+
+/* MODEL S Design */
+.modelS_main_image_top_title {
+  color: #FFF;
+}
+.bottom_sub_container_description, .bottom_sub_container_title {
+  color: #FFF;
+}
+.main_image_bottom_bottom, .main_image_bottom_text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main_image_top_text {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.main_image_bottom_text {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50vh;
+}
+.main_image_bottom_sub_container {
+  margin: 20px;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* MODEL S BOTTOM DESIGN */
 
 .btn__group {
   margin: 15px;
