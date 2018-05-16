@@ -157,10 +157,13 @@ ul {
   justify-content: center;
   flex-direction: column;
 }
-.modelS_autopilot_container, .modelS_safety_container, .modelS_performance_container, .modelS_range_container, .modelS_exterior_container, .modelS_specs_container {
+.modelS_autopilot_container, .modelS_safety_container, .modelS_performance_container, .modelS_range_container, .modelS_exterior_container {
   height: 100vh;
   width: 100vw;
   border: 1px solid lightgrey;
+}
+.modelS_specs_container {
+  height: 1vh;
 }
 .modelS_safety_container {
   min-height: 100vh;
@@ -188,6 +191,7 @@ ul {
   width: 100%;
   border-radius: 8px;
   padding: 10px;
+  margin: 20px 0 20px 0;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -233,11 +237,16 @@ ul {
 .modelS_safety_stars_title {
   display: flex;
   justify-content: flex-start;
-  font-size: 10px;
+  font-size: 14px;
   width: 40%;
 }
 .modelS_safety_stars_title h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.modelS_safety_stars h5 {
   font-size: 14px;
+  font-size: 100;
 }
 .modelS_safety_rating_sub_containers {
   display: flex;
@@ -255,15 +264,18 @@ ul {
 }
 .modelS_right_container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   background-color: #EEEEEE;
   height: 100vh;
   width: 100%;
+  padding: 50px;
 }
 .model_right_sub_container {
-  width: 80%;
+  width: 85%;
+  height: 70%;
+
 }
 .modelS_performance_top_container, .modelS_interior_top_container, .modelS_exterior_top_container {
   height: 70vh;
@@ -271,7 +283,7 @@ ul {
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  background-image: url('https://techcrunch.com/wp-content/uploads/2017/02/tesla-model-s-red-highway.jpg')
+  background-image: url('https://evobsession.com/wp-content/uploads/2015/06/Tesla-Model-S-Blue.jpeg')
 }
 .modelS_interior_top_container {
   background-image: url('http://unitedcarsnow.com/wp-content/uploads/2016/12/2017-Tesla-Model-S-Interior.jpg')
@@ -288,15 +300,12 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid lightgrey
 }
-.modelS_range_left_container {
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  background-image: url('http://www.sauliala.fi/wp-content/uploads/saksa-tesla-1600px-27.jpg')
+.modelS_performance_bottom_specs {
+  width: 80%;
 }
+
 .learn_button {
   font-size: 10px;
   background-color: transparent;
@@ -309,27 +318,46 @@ ul {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
   flex-direction: row;
 }
+.modelS_range_top_specs {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+}
+.modelS_range_left_container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url('https://mightyautoshop.com/wp-content/uploads/2014/05/tesla_model_s_silver.jpg')
+}
 .modelS_top_cotainer_text {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 1.6px;
   font-family: sans-serif;
   color: #FFF;
 }
 .modelS_top_container_description {
   font-size: 12px;
-  font-weight: 200;
+  font-weight: 300;
   font-family: sans-serif;
   color: #FFF;
 }
 .modelS_performance_top_specs_descriptions {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
+  margin: 20px;
+  width: 25%;
 }
 @media screen and (max-width: 480px) {
   .modelS_exterior_container, .modelS_interior_container, .modelS_performance_container, .modelS_range_container {
