@@ -2,6 +2,9 @@
   padding:0 ! important;
   overflow-x: hidden;
 }
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
 #navbar_color{
   background-color: #FFF;
 }
@@ -101,11 +104,30 @@ ul {
 }
 
 /* MODEL S Design */
-.modelS_main_image_top_title {
+.modelS_main_image_top_title, .modelS_main_image_top_subtitle {
   color: #FFF;
+  font-size: 24px;
+  font-weight: 200;
 }
+.modelS_main_image_top_subtitle{
+  font-weight: 400;
+  font-size: 40px;
+}
+.main_image_bottom_top {
+  width: 40vw;
+  text-align: justify;
+}
+
 .bottom_sub_container_description, .bottom_sub_container_title {
   color: #FFF;
+}
+.bottom_sub_container_title {
+  font-size: 36px;
+  font-weight: 400;
+}
+.bottom_sub_container_description {
+  font-weight: 200;
+  font-size: 20px;
 }
 .main_image_bottom_bottom, .main_image_bottom_text {
   display: flex;
@@ -128,12 +150,200 @@ ul {
   height: 50vh;
 }
 .main_image_bottom_sub_container {
-  margin: 20px;
-  background-color: green;
+  padding: 10px;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.modelS_autopilot_container, .modelS_safety_container, .modelS_performance_container, .modelS_range_container, .modelS_exterior_container, .modelS_specs_container {
+  height: 100vh;
+  width: 100vw;
+  border: 1px solid lightgrey;
+}
+.modelS_safety_container {
+  min-height: 100vh;
+  height: auto;
+}
+.modelS_safety_title {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: sans-serif;
+}
+.modelS_safety_sub_title  {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+.modelS_safety_description {
+  font-size: 14px;
+  font-weight: 200;
+  text-align: justify;
+  font-family: sans-serif;
+}
+.modelS_safety_rating {
+  background-color: #FFF;
+  height: auto;
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.modelS_safety_learn_more {
+  margin-top: 20px;
+}
+.modelS_safety_rating_sub_containers {
+  display: flex;
+  flex-direction: row;
+}
+.modelS_safety_button {
+  border-radius: 20px;
+  background-color: transparent;
+  border: 2px solid #000000;
+  padding: 10px 20px 10px 20px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+.modelS_performance_title {
+  font-size: 16px;
+  font-weight: 200;
+  font-family: sans-serif;
+}
+.modelS_performance_sub_title {
+  font-size: 22px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+.modelS_performance_description {
+  font-size: 14px;
+  font-weight: 200;
+  font-family: sans-serif;
+}
+.modelS_safety_stars{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+}
+.modelS_safety_stars_title {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 10px;
+  width: 40%;
+}
+.modelS_safety_stars_title h4 {
+  font-size: 14px;
+}
+.modelS_safety_rating_sub_containers {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.modelS_left_container {
+  background-color: red;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url('http://cdn.bmwblog.com/wp-content/uploads/2015/10/Tesla_Model_S_Autopilot_Wide.jpg');
+}
+.modelS_right_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #EEEEEE;
+  height: 100vh;
+  width: 100%;
+}
+.model_right_sub_container {
+  width: 80%;
+}
+.modelS_performance_top_container, .modelS_interior_top_container, .modelS_exterior_top_container {
+  height: 70vh;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url('https://techcrunch.com/wp-content/uploads/2017/02/tesla-model-s-red-highway.jpg')
+}
+.modelS_interior_top_container {
+  background-image: url('http://unitedcarsnow.com/wp-content/uploads/2016/12/2017-Tesla-Model-S-Interior.jpg')
+}
+.modelS_exterior_top_container {
+    background-image: url('https://toprentacar.bg/images/webcontent/382/tesla-header.jpg');
+    background-color: lightgrey;
+}
+.modelS_performance_bottom_container {
+  height: 30vh;
+  width: 100%;
+  background-color: #FFF;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modelS_range_left_container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url('http://www.sauliala.fi/wp-content/uploads/saksa-tesla-1600px-27.jpg')
+}
+.learn_button {
+  font-size: 10px;
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  padding: 8px 16px 8px 16px;
+
+}
+.modelS_performance_top_specs {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.modelS_top_cotainer_text {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: sans-serif;
+  color: #FFF;
+}
+.modelS_top_container_description {
+  font-size: 12px;
+  font-weight: 200;
+  font-family: sans-serif;
+  color: #FFF;
+}
+.modelS_performance_top_specs_descriptions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 480px) {
+  .modelS_exterior_container, .modelS_interior_container, .modelS_performance_container, .modelS_range_container {
+    height: auto;
+  }
+  .modelS_performance_bottom_container {
+    height: auto;
+    width: 100%;
+    background-color: #FFF;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* MODEL S BOTTOM DESIGN */
