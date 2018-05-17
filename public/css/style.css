@@ -26,7 +26,7 @@ ul {
   letter-spacing: 1.5px;
 }
 .main {
-  height: 100vh;main__image__models
+  height: 100vh;
   min-height: 100vh;
   width: 100vw;
   /* margin-top: -37px; */
@@ -36,7 +36,7 @@ ul {
   background: url(https://i.pinimg.com/originals/be/85/f4/be85f479ec6474495f8eb6420d97696d.jpg) no-repeat;
 }
 .main__image__models {
-  background: url(https://fortunedotcom.files.wordpress.com/2015/07/hero-02.jpg) no-repeat;
+  background: url(https://insideevs.com/wp-content/uploads/2018/12/111-24.jpg) no-repeat;
 }
 /* .main__image__modelx {
   background: url(https://images.hgmsites.net/hug/2017-tesla-model-x_100585106_h.jpg) no-repeat;
@@ -53,6 +53,9 @@ ul {
   -o-background-size:cover;
   background-size:cover;
   background-position:center;
+}
+.main__image__models {
+  height: 97vh;
 }
 
 
@@ -115,32 +118,52 @@ ul {
 }
 .main_image_bottom_top {
   width: 40vw;
-  text-align: justify;
+  height: auto;
+  background-color: orange;
+  display: flex;
+  justify-content: flex-end;
+
 }
 
 .bottom_sub_container_description, .bottom_sub_container_title {
-  color: #FFF;
-}
-.bottom_sub_container_title {
-  font-size: 36px;
-  font-weight: 400;
-}
-.bottom_sub_container_description {
-  font-weight: 200;
-  font-size: 20px;
-}
-.main_image_bottom_bottom, .main_image_bottom_text {
+  color: #1E1E1E;
+  width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+.bottom_sub_container_title {
+  font-size: 34px;
+  font-weight: 500;
+  width: 150px;
+  letter-spacing: 1.1px;
+  font-family: sans-serif;
+}
+.bottom_sub_container_description {
+  font-weight: 200;
+  font-size: 12px;
+}
+.main_image_bottom_bottom, .main_image_bottom_text {
+  display: flex;
+  height: 50vh;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: transparent;
+}
+.main_image_bottom_bottom {
+  background-color: transparent;
+  align-items: flex-end;
+  height: 60%;
+}
+
 .main_image_top_text {
   height: 50vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
+  padding-top: 50px;
 
 }
 .main_image_bottom_text {
@@ -253,7 +276,7 @@ ul {
   justify-content: flex-start;
   width: 100%;
 }
-.modelS_left_container {
+.modelS_left_container, .modelX_left_container {
   background-color: red;
   height: 100vh;
   width: 100%;
@@ -261,6 +284,9 @@ ul {
   background-size: cover;
   background-position: center;
   background-image: url('http://cdn.bmwblog.com/wp-content/uploads/2015/10/Tesla_Model_S_Autopilot_Wide.jpg');
+}
+.modelX_left_container {
+  background-image: url('https://www.tesla.com/sites/default/files/images/model-x/section-hero-background.jpg?20170816');
 }
 .modelS_right_container {
   display: flex;
@@ -277,7 +303,7 @@ ul {
   height: 70%;
 
 }
-.modelS_performance_top_container, .modelS_interior_top_container, .modelS_exterior_top_container {
+.modelS_performance_top_container, .modelS_interior_top_container, .modelS_exterior_top_container, .modelX_range_top_container, .modelX_interior_top_container {
   height: 70vh;
   width: 100%;
   overflow: hidden;
@@ -285,8 +311,14 @@ ul {
   background-position: center;
   background-image: url('https://evobsession.com/wp-content/uploads/2015/06/Tesla-Model-S-Blue.jpeg')
 }
+.modelX_range_top_container {
+  background-image: url('http://cartype.com/pics/11173/full/tesla_model-x_16_2.jpg')
+}
 .modelS_interior_top_container {
   background-image: url('http://unitedcarsnow.com/wp-content/uploads/2016/12/2017-Tesla-Model-S-Interior.jpg')
+}
+.modelX_interior_top_container  {
+  background-image: url('https://www.automoblog.net/wp-content/uploads/2015/09/Tesla-Model-X-interior-seating.jpg');
 }
 .modelS_exterior_top_container {
     background-image: url('https://toprentacar.bg/images/webcontent/382/tesla-header.jpg');
@@ -314,13 +346,19 @@ ul {
   padding: 8px 16px 8px 16px;
 
 }
-.modelS_performance_top_specs {
+.modelS_performance_top_specs, .modelX_utility_top_specs , .modelS_exterior_top_specs{
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   flex-direction: row;
+}
+.modelS_exterior_top_specs {
+  align-items: flex-end;
+}
+.modelX_utility_top_specs {
+  color: #000000;
 }
 .modelS_range_top_specs {
   height: 100vh;
@@ -330,7 +368,7 @@ ul {
   align-items: flex-end;
   flex-direction: row;
 }
-.modelS_range_left_container {
+.modelS_range_left_container , .modelX_range_left_container {
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -338,26 +376,52 @@ ul {
   background-position: center;
   background-image: url('https://mightyautoshop.com/wp-content/uploads/2014/05/tesla_model_s_silver.jpg')
 }
-.modelS_top_cotainer_text {
+.modelX_range_left_container {
+  background-image: url('https://media.architecturaldigest.com/photos/591ed5cbdd7ac31c56ce60a8/master/pass/Tesla%20Model%20X%20P100D%201.jpg')
+}
+.modelS_top_cotainer_text, .modelX_top_cotainer_text  {
   font-size: 24px;
   font-weight: 500;
   letter-spacing: 1.6px;
   font-family: sans-serif;
   color: #FFF;
 }
-.modelS_top_container_description {
+.modelS_top_cotainer_text_exterior{
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 1.6px;
+  font-family: sans-serif;
+  color: #1E1E1E;
+}
+.modelS_top_container_description_exterior {
+  color: #1E1E1E;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: sans-serif;
+}
+.modelX_top_cotainer_text {
+  color: #000000;
+}
+.modelS_top_container_description, .modelX_top_cotainer_description {
   font-size: 12px;
   font-weight: 300;
   font-family: sans-serif;
   color: #FFF;
 }
-.modelS_performance_top_specs_descriptions {
+.modelX_top_cotainer_description {
+  color: #000000;
+}
+.modelS_performance_top_specs_descriptions , .modelS_exterior_top_specs_descriptions{
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
   margin: 20px;
   width: 25%;
+}
+.modelS_exterior_top_specs_descriptions {
+  justify-content: flex-end;
+  margin: 0 20px 0 20px;
 }
 @media screen and (max-width: 480px) {
   .modelS_exterior_container, .modelS_interior_container, .modelS_performance_container, .modelS_range_container {
