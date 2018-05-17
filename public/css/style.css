@@ -33,18 +33,18 @@ ul {
 }
 
 .main__image__model3 {
-  background: url(https://i.pinimg.com/originals/be/85/f4/be85f479ec6474495f8eb6420d97696d.jpg) no-repeat;
+  background: url(https://plugin-magazine.com/media/cache/upload/Photo/2017/07/29/tesla-model-3-1_biggalleryimage.jpg) no-repeat;
 }
 .main__image__models {
   background: url(https://insideevs.com/wp-content/uploads/2018/12/111-24.jpg) no-repeat;
 }
-/* .main__image__modelx {
+.main__image__modelX {
   background: url(https://images.hgmsites.net/hug/2017-tesla-model-x_100585106_h.jpg) no-repeat;
-} */
+}
 .main__image__roadster {
   background: url(https://www.tesla.com/sites/default/files/images/roadster/roadster-social.jpg) no-repeat;
 }
-.main__image__model3, .main__image__models,  .main__image__modelx, .main__image__roadster{
+.main__image__model3, .main__image__models,  .main__image__modelX, .main__image__roadster{
   height: 100vh;
   width: 100%;
   background-repeat:no-repeat;
@@ -125,23 +125,29 @@ ul {
 
 }
 
-.bottom_sub_container_description, .bottom_sub_container_title {
+.bottom_sub_container_description, .bottom_sub_container_title ,.bottom_sub_container_description_modelx, .bottom_sub_container_title_modelx, .bottom_sub_container_title_model3, .bottom_sub_container_description_model3{
   color: #1E1E1E;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.bottom_sub_container_title {
-  font-size: 34px;
+.bottom_sub_container_title, .bottom_sub_container_title_modelx , .bottom_sub_container_title_model3{
+  font-size: 32px;
   font-weight: 500;
   width: 150px;
   letter-spacing: 1.1px;
   font-family: sans-serif;
 }
-.bottom_sub_container_description {
+.bottom_sub_container_description, .bottom_sub_container_description_modelx ,.bottom_sub_container_description_model3{
   font-weight: 200;
   font-size: 12px;
+}
+.bottom_sub_container_title_modelx, .bottom_sub_container_description_modelx {
+  color: #FFF;
+}
+.bottom_sub_container_title_model3, .bottom_sub_container_description_model3 {
+  color: #FFF;
 }
 .main_image_bottom_bottom, .main_image_bottom_text {
   display: flex;
@@ -303,7 +309,7 @@ ul {
   height: 70%;
 
 }
-.modelS_performance_top_container, .modelS_interior_top_container, .modelS_exterior_top_container, .modelX_range_top_container, .modelX_interior_top_container {
+.modelS_performance_top_container, .modelS_interior_top_container, .modelS_exterior_top_container, .modelX_range_top_container, .modelX_interior_top_container, .modelX_exterior_top_container {
   height: 70vh;
   width: 100%;
   overflow: hidden;
@@ -323,6 +329,9 @@ ul {
 .modelS_exterior_top_container {
     background-image: url('https://toprentacar.bg/images/webcontent/382/tesla-header.jpg');
     background-color: lightgrey;
+}
+.modelX_exterior_top_container {
+    background-image: url('https://c.slashgear.com/wp-content/uploads/2017/08/tesla-model-x-2-1280x720.jpg')
 }
 .modelS_performance_bottom_container {
   height: 30vh;
@@ -440,6 +449,33 @@ ul {
 
 /* MODEL S BOTTOM DESIGN */
 
+/* MODELX CSS */
+
+.modelX_top_container_description {
+  font-size: 12px;
+  font-weight: 300;
+  font-family: sans-serif;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.modelX_top_cotainer_text {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 1.6px;
+  font-family: sans-serif;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.modelX_performance_top_specs_descriptions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 25%;
+}
+
+/* MODELX CSS BOTTOM */
 .btn__group {
   margin: 15px;
 }
@@ -483,7 +519,7 @@ ul {
   background-color: #FFF;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 .timeline__details {
   height: 350px;
