@@ -780,13 +780,15 @@ form.example button:hover {
 }
 #myVideo {
   position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
+  top: 0;
+  left: 0;
+  width: 100vw;
   height: 800px;
   /* min-height: 100vh; */
   z-index: 1;
-  object-fit: contain;
+  object-fit: cover;
+  padding: 0;
+  background-color: transparent;
 }
 .videos_index {
   width: 100%;
@@ -794,6 +796,7 @@ form.example button:hover {
   min-height: 90vh;
   overflow-x: hidden;
   background-color: transparent;
+  z-index: -10;
 }
 .video__container {
   background-color: lightgrey;
@@ -814,6 +817,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: transparent;
 }
 .content-description {
   font-style: sans-serif;
