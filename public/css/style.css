@@ -18,6 +18,7 @@ ul {
 .row.no-gutters {
   padding-right: 0;
   padding-left: 0;
+  height: auto;
 }
 #models, #model3, #modelx, #roadster{
   color: #FFF;
@@ -62,13 +63,15 @@ ul {
 .information {
   background-color: red;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   z-index: 2;
 }
 .information__container {
   width: 60vw;
   min-height: 50vh;
   height: auto;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,6 +94,8 @@ ul {
 #model3_reserve_button{
   background-color: #EB2626;
   color: #FFF;
+  border: 1px solid transparent;
+
 }
 .section--title {
   font-weight: 200;
@@ -186,7 +191,7 @@ ul {
   justify-content: center;
   flex-direction: column;
 }
-.modelS_autopilot_container, .modelS_safety_container, .modelS_performance_container, .modelS_range_container, .modelS_exterior_container {
+.modelS_autopilot_container, .modelS_safety_container, .modelS_performance_container, .modelS_range_container, .modelS_exterior_container, .modelS_interior_container {
   height: 100vh;
   width: 100vw;
   border: 1px solid lightgrey;
@@ -194,7 +199,7 @@ ul {
 .modelS_specs_container {
   height: 1vh;
 }
-.modelS_safety_container {
+.modelS_safety_container, .modelS_range_container {
   min-height: 100vh;
   height: auto;
 }
@@ -241,6 +246,7 @@ ul {
   font-size: 12px;
   font-weight: 400;
   font-family: sans-serif;
+  margin: 10px 0 10px 0;
 }
 .modelS_performance_title {
   font-size: 16px;
@@ -476,8 +482,12 @@ ul {
 }
 
 /* MODELX CSS BOTTOM */
-.btn__group {
-  margin: 15px;
+.btn__group_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
 }
 .btn--primary {
   padding: 15px 30px 15px 30px;
@@ -496,8 +506,8 @@ ul {
   color: #FFF;
 }
 .timeline {
+  min-height: 50vh;
   height: auto;
-  background-color: lightgrey;
   width: 100vw;
 }
 .timeline__sub__containers {
@@ -515,11 +525,13 @@ ul {
  border-right: 1px solid lightgrey;
 }
 .timeline__title {
-  height: 15vh;
+  min-height: 15vh;
+  height: auto;
   background-color: #FFF;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+  width: 100%;
 }
 .timeline__details {
   height: 350px;
@@ -627,11 +639,20 @@ form.example button:hover {
   width: 90%;
   height: 400px;
 }
+.buttom_grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
 .model3_spec_safety_images, .model3_spec_safety_information {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+}
+.model3_spec_safety_information_subcontainer {
+  padding: 10px 15px 10px 15px;
 }
 .safety_spec_title {
   font-size: 24px;
@@ -645,6 +666,7 @@ form.example button:hover {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  width: 100%;
 }
 .safety_spec_description {
   font-size: 14px;
@@ -663,13 +685,16 @@ form.example button:hover {
   font-weight: 200;
   font-size: 36px;
 }
-
-
+.btn-primary {
+  border: 1px solid transparent;
+  background-color: #000000;
+}
 
 
 /* ROADSTER CSS */
 .roadster__text__container {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   width: 100vw;
 }
 .header--text {
@@ -767,8 +792,9 @@ form.example button:hover {
   font-weight: 200;
 }
 .roadsterspecs {
-  height: 175vh;
+  min-height: 175vh;
   width: 100vw;
+  height: auto;
   background-color: lightgrey;
 }
 .videos {
@@ -800,7 +826,8 @@ form.example button:hover {
 }
 .video__container {
   background-color: lightgrey;
-  height: 175vh;
+  min-height: 175vh;
+  height: auto;
 }
 nav {
   z-index: 2;
@@ -847,7 +874,8 @@ nav {
   opacity: 0.9;
 }
 .video--specs {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   width: 100vw;
   display: flex;
   justify-content: flex-start;
@@ -988,4 +1016,138 @@ li {
   font-size: 12px;
   font-weight: 200;
   color: #474747;
+}
+@media screen and (max-width: 780px) {
+  .bottom_sub_container_description, .bottom_sub_container_title ,.bottom_sub_container_description_modelx, .bottom_sub_container_title_modelx, .bottom_sub_container_title_model3, .bottom_sub_container_description_model3{
+    color: #1E1E1E;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottom_sub_container_title, .bottom_sub_container_title_modelx , .bottom_sub_container_title_model3{
+    font-size: 20px;
+    font-weight: 500;
+    width: auto;
+    letter-spacing: 1.1px;
+    font-family: sans-serif;
+  }
+  .bottom_sub_container_description, .bottom_sub_container_description_modelx ,.bottom_sub_container_description_model3{
+    font-weight: 200;
+    font-size: 11px;
+  }
+  .bottom_sub_container_title_modelx, .bottom_sub_container_description_modelx {
+    color: #FFF;
+  }
+  .bottom_sub_container_title_model3, .bottom_sub_container_description_model3 {
+    color: #FFF;
+  }
+  .main_image_bottom_text {
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 1200px){
+  #roadster_video{
+    height: 325px;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .bottom_sub_container_description, .bottom_sub_container_title ,.bottom_sub_container_description_modelx, .bottom_sub_container_title_modelx, .bottom_sub_container_title_model3, .bottom_sub_container_description_model3{
+    display: none;
+  }
+  .modelS_top_cotainer_text_exterior, .modelS_top_container_description_exterior {
+    display: none;
+  }
+  .modelS_right_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EEEEEE;
+    height: auto;
+    width: 100%;
+    padding: 50px;
+  }
+  .information__container {
+    width: 100vw;
+    min-height: 50vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+  .information__reservation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    width: 100vw;
+    height: auto;
+    background-color: #E8E8E8;
+    flex-direction: column;
+  }
+
+  #model3_reserve_button{
+    background-color: #EB2626;
+    color: #FFF;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    border: 1px solid transparent;
+  }
+  #model3_get_button{
+    color: #FFF;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    background-color: #000000;
+  }
+  .section--title {
+    font-weight: 200;
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+  }
+  .timeline__sub__containers {
+    height: 150px;
+    width: 100%;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10%;
+  }
+  .model3_spec_safety_information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .modelS_main_image_top_subtitle{
+    font-weight: 400;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 500px){
+  #model3_reserve_button{
+    background-color: #EB2626;
+    color: #FFF;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    border: 1px solid transparent;
+
+  }
+  #model3_get_button{
+    color: #FFF;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    background-color: #000000;
+
+  }
+
 }
