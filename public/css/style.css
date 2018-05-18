@@ -192,7 +192,8 @@ ul {
   flex-direction: column;
 }
 .modelS_autopilot_container, .modelS_safety_container, .modelS_performance_container, .modelS_range_container, .modelS_exterior_container, .modelS_interior_container {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   width: 100vw;
   border: 1px solid lightgrey;
 }
@@ -340,7 +341,8 @@ ul {
     background-image: url('https://c.slashgear.com/wp-content/uploads/2017/08/tesla-model-x-2-1280x720.jpg')
 }
 .modelS_performance_bottom_container {
-  height: 30vh;
+  min-height: 30vh;
+  height: auto;
   width: 100%;
   background-color: #FFF;
   padding: 15px;
@@ -351,6 +353,7 @@ ul {
 }
 .modelS_performance_bottom_specs {
   width: 80%;
+  height: auto;
 }
 
 .learn_button {
@@ -478,7 +481,8 @@ ul {
   justify-content: flex-end;
   align-items: flex-start;
   flex-direction: column;
-  width: 25%;
+  width: auto;
+  padding: 20px;
 }
 
 /* MODELX CSS BOTTOM */
@@ -792,13 +796,14 @@ form.example button:hover {
   font-weight: 200;
 }
 .roadsterspecs {
-  min-height: 175vh;
+  min-height: 100vh;
   width: 100vw;
   height: auto;
   background-color: lightgrey;
 }
 .videos {
-  height: 75vh;
+  min-height: 40vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -826,7 +831,7 @@ form.example button:hover {
 }
 .video__container {
   background-color: lightgrey;
-  min-height: 175vh;
+  min-height: 100vh;
   height: auto;
 }
 nav {
@@ -874,7 +879,7 @@ nav {
   opacity: 0.9;
 }
 .video--specs {
-  min-height: 100vh;
+  min-height: 50vh;
   height: auto;
   width: 100vw;
   display: flex;
@@ -1132,6 +1137,14 @@ li {
     font-weight: 400;
     font-size: 30px;
   }
+  .tesla_roadster_title {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  .footer--text {
+    display: none;
+
+  }
 }
 @media screen and (max-width: 500px){
   #model3_reserve_button{
@@ -1147,7 +1160,13 @@ li {
     width: 100%;
     margin: 10px 0 10px 0;
     background-color: #000000;
-
+  }
+  .videos {
+    display: none;
+    height: 1vh;
+  }
+  #roadster_video {
+    display: none;
   }
 
 }
