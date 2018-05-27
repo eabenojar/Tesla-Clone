@@ -8,6 +8,11 @@ h1, h2, h3, h4, h5, h6 {
 #navbar_color{
   background-color: #FFF;
 }
+video[poster]{
+  object-fit: cover;
+  height: 100px;
+  width: 100px;
+}
 ul {
   list-style-type: none;
   padding-left:0 ! important;
