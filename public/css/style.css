@@ -814,7 +814,7 @@ form.example button:hover {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 800px;
+  min-height: 800px;
   /* min-height: 100vh; */
   z-index: 1;
   object-fit: cover;
